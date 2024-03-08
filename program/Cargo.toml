@@ -1,0 +1,13 @@
+[workspace]
+[package]
+version = "0.1.0"
+name = "sp1_recursion-program"
+edition = "2021"
+
+[dependencies]
+sp1-zkvm = { git = "https://github.com/succinctlabs/sp1.git" }
+
+lambdaworks-math = { git = "https://github.com/lambdaclass/lambdaworks", rev = "fed12d674418e4f09bc843b71bc90008a85b1aed" }
+cairo-platinum-prover = { git = "https://github.com/lambdaclass/lambdaworks", rev = "fed12d674418e4f09bc843b71bc90008a85b1aed", features = ['parallel'] }
+stark-platinum-prover = { git = "https://github.com/lambdaclass/lambdaworks", rev = "fed12d674418e4f09bc843b71bc90008a85b1aed" }
+tracing = "0.1.40"

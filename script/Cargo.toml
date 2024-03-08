@@ -1,0 +1,15 @@
+[workspace]
+[package]
+version = "0.1.0"
+name = "sp1_recursion-script"
+edition = "2021"
+
+[dependencies]
+sp1-core = { git = "https://github.com/succinctlabs/sp1.git" }
+bincode = { version = "2.0.0-rc.2", tag = "v2.0.0-rc.2", git = "https://github.com/bincode-org/bincode.git", features= ['serde'] }
+lambdaworks-math = { git = "https://github.com/lambdaclass/lambdaworks", rev = "fed12d674418e4f09bc843b71bc90008a85b1aed" }
+cairo-platinum-prover = { git = "https://github.com/lambdaclass/lambdaworks", rev = "fed12d674418e4f09bc843b71bc90008a85b1aed", features = ['parallel', 'instruments'] }
+stark-platinum-prover = { git = "https://github.com/lambdaclass/lambdaworks", rev = "fed12d674418e4f09bc843b71bc90008a85b1aed" }
+
+[build-dependencies]
+sp1-helper = { git = "https://github.com/succinctlabs/sp1.git" }
